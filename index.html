@@ -22,13 +22,14 @@
 <body>
 
 <h1>HexFall — Privacy Policy</h1>
-<p class="updated">Last updated: 2 September 2026</p>
+<p class="updated">Last updated: 18 September 2026</p>
 
 <p>HexFall is a strategy game for iOS and Android, made by a single independent developer in the
 United Kingdom. This policy explains what the app does with your information. The short version:
 <strong>HexFall has no advertising, no analytics and no tracking.</strong> Nothing you do in the game
-is profiled, sold, or shared with advertisers, and if you never play online, nothing about you leaves
-your device.</p>
+is profiled, sold, or shared with advertisers. Apart from an anonymous identifier created when you
+first open the app (explained below), nothing about you leaves your device unless you play online or
+choose to post scores to the Daily Challenge leaderboard.</p>
 
 <h2>Information stored on your device</h2>
 
@@ -39,10 +40,22 @@ storage. That includes:</p>
   <li>campaign progress, unlocked content and achievements;</li>
   <li>game statistics;</li>
   <li>game settings, such as sound and haptics preferences;</li>
+  <li>your Daily Challenge personal bests, streak and medal tally;</li>
   <li>whether the full-game unlock has been purchased.</li>
 </ul>
 
-<p>This information is not transmitted to the developer, and deleting the app deletes all of it.</p>
+<p>This information is not transmitted to the developer, and deleting the app deletes all of it. The
+only exception is your player name, which is sent to other players if you play online, and published
+if you join the Daily Challenge leaderboard — both described below.</p>
+
+<h2>The anonymous identifier</h2>
+
+<p>The first time you open HexFall, the app creates an anonymous account with <strong>Google
+Firebase</strong> (Anonymous Authentication) and stores it on your device, so that your device keeps
+the same identifier between sessions. It is used only for online play and the Daily Challenge. It is
+not linked to your Google or Apple account, your email address, or any real-world identity, and it is
+not used to identify you outside the game. Creating it, like any internet connection, makes your IP
+address visible to Google's servers; it is not used to determine your location.</p>
 
 <h2>Playing on one device</h2>
 
@@ -60,14 +73,12 @@ feature does nothing until you allow it.</p>
 <h2>Playing online</h2>
 
 <p>Online multiplayer is optional, and none of this section applies if you do not use it. When you
-play an online match, HexFall uses <strong>Google Firebase</strong> (Anonymous Authentication and
-Realtime Database), and the following is transmitted:</p>
+play an online match, HexFall uses <strong>Google Firebase</strong> (Realtime Database), and the
+following is transmitted:</p>
 
 <ul>
-  <li><strong>An anonymous account identifier.</strong> The first time you play online, the app
-      creates an anonymous account and stores it, so that your device keeps the same identifier
-      between sessions. It is not linked to your Google or Apple account, your email address, or any
-      real-world identity, and it is not used to identify you outside the game.</li>
+  <li><strong>Your anonymous identifier</strong>, described above, so that each player in the match
+      can be told apart.</li>
   <li><strong>Your chosen player name</strong>, so that the other players in the match can see who
       they are playing against. You choose this name, and you are not required to use your real
       name.</li>
@@ -77,6 +88,32 @@ Realtime Database), and the following is transmitted:</p>
       deliver network traffic, as it is for any internet connection. It is not used to determine your
       location.</li>
 </ul>
+
+<h2>The Daily Challenge leaderboard</h2>
+
+<p>The Daily Challenge is a new game setup each day. To play it, the app downloads that day's
+challenge from Google Firebase; that download sends nothing about you except the anonymous identifier
+needed to read it.</p>
+
+<p>Joining the <strong>leaderboard is optional</strong>. The first time you win a Daily Challenge you
+are asked for a name to appear under, and you can decline. If you do join, the following is stored
+with Google Firebase and linked to your anonymous identifier:</p>
+
+<ul>
+  <li><strong>Your leaderboard name.</strong> It is also your profile name, and it must be unique.
+      You choose it, and you are not required to use your real name.</li>
+  <li><strong>Each Daily Challenge you win</strong>: your score, the number of turns you took, a
+      breakdown of how the score was made up, and the time it was submitted.</li>
+  <li><strong>The time you last used the leaderboard</strong>, so that a name nobody has used for 30
+      days can be released for someone else to claim.</li>
+</ul>
+
+<p><strong>Your leaderboard name, and the scores and turn counts you post, can be seen by everyone who
+plays HexFall</strong>, on iOS and Android. Top-three medals are worked out on your device from the
+public leaderboard, and nothing extra about them is stored online.</p>
+
+<p>Names are checked against a list of words that are not allowed. The developer may remove a name,
+or a score, that breaks these rules or appears not to have been earned in play.</p>
 
 <p>HexFall does not collect your email address, phone number, contacts, location, photos, files, or
 any payment details. There is no chat and no way to send messages to other players.</p>
@@ -91,7 +128,8 @@ confirmation that the purchase is valid.</p>
 <h2>Third parties</h2>
 
 <p>The only third-party service HexFall uses is <strong>Google Firebase</strong>, which acts as the
-developer's data processor for anonymous authentication and match data. Google's handling of that
+developer's data processor for the anonymous identifier, match data, the daily challenge and the
+leaderboard. Google's handling of that
 data is covered by the
 <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security policy</a> and
 the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
@@ -105,15 +143,25 @@ developer receives are aggregated and do not identify you.</p>
 <p>Match data exists for the duration of a match and is removed when the last player leaves. A match
 abandoned without a clean exit — for example if every device loses connection at once — may persist
 until it is removed; abandoned matches are cleared periodically, and you can request removal at any
-time using the contact address below. The anonymous account identifier persists until you delete it,
-or until you uninstall the app.</p>
+time using the contact address below.</p>
+
+<p>Leaderboard entries and your leaderboard name are kept until you delete them. A leaderboard name
+that has not been used for 30 days may be claimed by another player.</p>
+
+<p>The anonymous identifier stored on your device persists until you delete it, or until you
+uninstall the app.</p>
 
 <h2 id="deleting-your-data">Deleting your data</h2>
 
 <p>You can delete everything at any time:</p>
 <ul>
+  <li><strong>Delete Leaderboard Data</strong>, on the Profile screen once you have joined the
+      leaderboard, removes your leaderboard name and every score you have posted, in one step. Your
+      personal bests and streak stay on your device.</li>
   <li><strong>Uninstalling the app</strong> removes all locally stored information, including the
-      anonymous account identifier held on your device.</li>
+      anonymous identifier held on your device. <strong>It does not remove anything you have posted
+      to the leaderboard</strong> — use Delete Leaderboard Data first, or email the address
+      below.</li>
   <li>To request deletion of any remaining online data associated with your anonymous account, email
       <a href="mailto:hexfall.game@gmail.com">hexfall.game@gmail.com</a>. Because the identifier is
       anonymous, please send your message from the device in question, or include the identifier, so
@@ -124,8 +172,10 @@ or until you uninstall the app.</p>
 
 <ul>
   <li>No analytics, advertising or attribution software.</li>
-  <li>No tracking, and no sharing or selling of your data.</li>
-  <li>No user accounts to create, and no sign-in — online play uses an anonymous identifier only.</li>
+  <li>No tracking, and no selling of your data. Nothing is shared with anyone other than Google
+      Firebase as described here — apart from what you choose to post to the public leaderboard.</li>
+  <li>No user accounts to create, and no sign-in — online play and the leaderboard use an anonymous
+      identifier only.</li>
   <li>No chat, and no user-generated content beyond the player name you choose.</li>
   <li>No access to your contacts, photos, location, microphone or camera.</li>
 </ul>
